@@ -99,7 +99,7 @@ print('(2 + 2) * 2');
 print('(2 + 2) ** 2');
 print('7*((2 + 2) * 2)');
 print('-7*((2 + 2) * 2)');
-print('6*(4/2)+3*1');
+print('6* (4/2)+3*1');
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
