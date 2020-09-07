@@ -14,7 +14,7 @@ export const OPERATIONS: Record<string, (a: number, b: number)=> number> = {
   '*': (a: number, b: number): number => a * b,
   '/': (a: number, b: number): number => a / b,
   '**': (a: number, b: number): number => Math.pow(a, b),
-  '//': (a: number, b: number): number => { const r = a/ b; return r/b;},
+  '//': (a: number, b: number): number => Math.floor(a/ b)
 };
 
 export function arithmeticEvaluate(expression: string): number {
@@ -93,6 +93,7 @@ function print(expression: string): void {
 }
 
 print('2+2');
+print('15//2');
 print('6/3-1');
 print('2 + 2 * 2');
 print('(2 + 2) * 2');
